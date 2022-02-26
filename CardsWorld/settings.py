@@ -54,7 +54,13 @@ ROOT_URLCONF = 'CardsWorld.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR / 'templates',
+                 'index_page/templates',
+                 'articles/templates',
+                 'history/templates',
+                 'magic/templates',
+                 'play/templates',
+                 'shop/templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
