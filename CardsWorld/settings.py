@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'articles.apps.ArticlesConfig',
+    'face.apps.FaceConfig',
+    'history.apps.HistoryConfig',
+    'magic.apps.MagicConfig',
+    'play.apps.PlayConfig',
+    'shop.apps.ShopConfig'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates',
-                 'index_page/templates',
+                 'face/templates',
                  'articles/templates',
                  'history/templates',
                  'magic/templates',

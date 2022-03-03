@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from articles import urls
 from history import urls
-from index_page import urls
+from face import urls
 from play import urls
 from shop import urls
 
@@ -25,8 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('articles/',include('articles.urls')),
     path('history/',include('history.urls')),
-    path('',include('index_page.urls')),
-    path('index/',include('index_page.urls')),
+    path('', include('face.urls')),
+    path('index/', include('face.urls')),
+    path('face/',include('face.urls')),
     path('play/',include('magic.urls')),
     path('play/',include('play.urls')),
     path('shop/',include('shop.urls')),
