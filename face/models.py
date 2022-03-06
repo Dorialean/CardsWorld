@@ -9,4 +9,4 @@ class Person(models.Model):
     password = models.CharField(max_length=64)
     picture = models.ImageField(upload_to='avatars/%Y/%m/%d/')
     reg_date = models.DateTimeField(auto_now_add=True)
-#    order_id = models.ForeignKey('Order',on_delete=models.CASCADE)
+    order_id = models.ForeignKey('shop.Order',on_delete=models.CASCADE, default='No order')

@@ -1,5 +1,5 @@
 from django.db import models
-from face.models import Person
+
 # Create your models here.
 
 class Product(models.Model):
@@ -13,8 +13,8 @@ class Product(models.Model):
     weight = models.CharField(max_length=10)
 
 class Order(models.Model):
-    person_id = models.ForeignKey(Person,on_delete=models.CASCADE)
-    product_id = models.ForeignKey(Product,on_delete=models.CASCADE)
+    person_id = models.ForeignKey('face.Person',on_delete=models.CASCADE)
+    product_id = models.ForeignKey('Product',on_delete=models.CASCADE)
     amount = models.IntegerField()
     is_paid = models.BooleanField(default=False)
     is_delivered = models.BooleanField(default=False)
