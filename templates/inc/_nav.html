@@ -1,0 +1,21 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/navStyle.css' %}">
+
+<hr size=10px color="#411A06"/>
+<nav class="nav_bar">
+    <ul>
+        <li><a href="#"><img class="home_img" src="{% static 'images/chervi.png' %}"/></a></li>
+        <li><a href="#"><button class="left_butt">Articles<img class="inside_img" src="{% static 'images/sometexts.png' %}"/></button></a></li>
+        <li><a href="#"><button class="left_butt">History<img class="inside_img" src="{% static 'images/scroll.png' %}"/></button></a></li>
+        <li><a href="#"><button class="left_butt">Play<img class="inside_img" src="{% static 'images/casino_chips.png' %}"/></button></a></li>
+        <li><a href="#"><button class="left_butt">Magic<img class="inside_img" src="{% static 'images/electrisity_wave.png' %}"/></button></a></li>
+        <li><a href="#"><button class="left_butt">Shop<img class="inside_img" src="{% static 'images/gold_coin.png' %}"/></button></a></li>
+
+        <li><a href="#"><img class="prof_img" src="{% static 'images/profile.png' %}"/></a></li>
+        <ul class="right_ul">
+            <li class="right_li"><h1 id="prof_nick">Имя пользователя</h1></li>
+            <li class="right_li"><p id="prof_mail">Почта пользователя</p></li>
+        </ul>
+    </ul>
+</nav>

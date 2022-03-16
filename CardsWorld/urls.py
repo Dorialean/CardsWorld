@@ -31,6 +31,4 @@ urlpatterns = [
     path('play/',include('magic.urls')),
     path('play/',include('play.urls')),
     path('shop/',include('shop.urls')),
-
 ]
-
