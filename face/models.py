@@ -7,6 +7,6 @@ class Person(models.Model):
     firstname = models.CharField(max_length=30)
     email = models.EmailField()
     password = models.CharField(max_length=64)
-    picture = models.ImageField(upload_to='avatars/%Y/%m/%d/')
+    picture = models.ImageField(upload_to='avatars/%Y/%m/%d/',blank=True,null=True)
     reg_date = models.DateTimeField(auto_now_add=True)
-    order_id = models.ForeignKey('shop.Order',on_delete=models.CASCADE, default='No order')
+    order_id = models.ForeignKey('shop.Order',on_delete=models.CASCADE, default=0,blank=True,null=True)

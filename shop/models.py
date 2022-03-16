@@ -9,7 +9,7 @@ class Product(models.Model):
     amount = models.IntegerField()
     size = models.CharField(max_length=6)
     company_name = models.CharField(max_length=300)
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d/',blank=True,null=True)
     weight = models.CharField(max_length=10)
 
 class Order(models.Model):
