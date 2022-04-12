@@ -1,5 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 def index(request):
     return render(request, 'face/index.html', None)
+
+
+def register(request):
+    return render(request, "face/register.html")

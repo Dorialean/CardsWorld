@@ -1,22 +1,37 @@
 {% extends "base.html" %}
 {% load static %}
-<!--TODO: Разобраться почему не работает css*/-->
-    <link rel="stylesheet" type="text/css" href="{% static 'face/static/css/indexStyle.css' %}">
+
+{% block linking %}
+    <link rel="stylesheet" href="{% static 'face/static/css/indexStyle.css' %}">
+{% endblock %}
+
 {% block inside %}
-<h1 class="welcoming_text">Welcome to the Cards World!</h1>
-    <div class="textcols">
-        <div class="textcols-item">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </div>
-        <div class="textcols-item">
-            <div class="sign_box">
-                <br/>
-                <h2 class="inroducer"><i>Please, introduce yourself</i></h2><br/>
-                <input type="text" placeholder="Input login" class="login_box"><br/>
-                <input type="password" placeholder="Input password" class="password_box"><br/>
-                <button class="signer">Sign in</button><br/>
-                <a href="#" class="regs">Register</a>
-            </div>
-        </div>
-    </div>
+    <table>
+        <tr>
+            <th colspan="2">
+                <h1 class="welcoming_header">Welcome to the Cards World!</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p class="welcoming_text">{% lorem %}</p>
+            </td>
+            <td>
+                <div class="sign_box">
+                    <br/>
+                    <h2 class="introducer">
+                        <i>Please, introduce yourself</i>
+                    </h2>
+                    <br/>
+                    <input type="text" placeholder="Input login" class="login_box">
+                    <br/>
+                    <input type="password" placeholder="Input password" class="password_box">
+                    <br/>
+                    <button class="signer">Sign in</button>
+                    <br/>
+                    <a href="register/" class="regs">Register</a>
+                </div>
+            </td>
+        </tr>
+    </table>
 {% endblock %}

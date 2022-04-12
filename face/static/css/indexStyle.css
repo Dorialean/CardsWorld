@@ -1,24 +1,4 @@
-body{
-    background: rgba(47, 112, 41, 1);
-}
-
-.textcols {
-	white-space: nowrap;
-}
-.textcols-item {
-	white-space: normal;
-	display: inline-block;
-	width: 48%;
-	vertical-align: top;
-    color:#E4C485;
-    margin-left: 15px;
-    font-size: 25px;
-}
-.textcols .textcols-item:first-child {
-	margin-right: 4%;
-}
-
-.welcoming_text{
+.welcoming_header{
     margin-left: 30px;
     color: #F8E6CD;
     font-size: 50px;
@@ -26,19 +6,20 @@ body{
 
 .sign_box{
     background-color: #E1AB61;
-    margin-right: 150px;
-    margin-left: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 20px;
     text-align: center;
 }
 
-.inroducer{
+.introducer{
     background-color: #583305;
-    height: 40px;
+    height: 80px;
     margin-left: 2px;
     margin-right: 2px;
     border-radius: 20px;
     font-size: 30px;
+    color: white;
 }
 
 .login_box{
@@ -56,8 +37,9 @@ body{
 .signer{
     border-radius: 3px;
     height: 70px;
-    width: 160px;
+    width: 260px;
     background-color: #9F6B24;
+    font-size: 30px;
     color: white;
     margin-bottom: 14px;
 }
@@ -68,4 +50,20 @@ body{
     background-color: #351e02;
 }
 
-.regs
+body{
+    background-color: #2F7029;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.welcoming_text{
+    font-family: 'Rubik One', sans-serif;
+      font-size: 50px;
+      text-transform: uppercase;
+      background: linear-gradient(45deg, #feec46 33%, #0b0404 66%, #171100);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #ff7600;
+      display: table;
+      margin: 20px auto;
+
+}
