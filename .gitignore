@@ -1,6 +1,11 @@
 # created by virtualenv automatically
 
-/Scripts/
-/Lib/
-/Lib/site-packages/
 /.idea/
+/Scripts/*
+/Lib/*
+*.pyc
+doc/.*
+partner/.*
+.settings/
+doc
+/venv/*
