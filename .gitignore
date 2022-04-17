@@ -1,5 +1,5 @@
 # created by virtualenv automatically
 
-/Scripts/
-/Lib/
-/Lib/site-packages/
+/Scripts/*
+/Lib/*
+/Lib/site-packages/*
