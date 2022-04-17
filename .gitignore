@@ -9,3 +9,4 @@ partner/.*
 .settings/
 doc
 /venv/*
+/CardsWorld/settings.py
