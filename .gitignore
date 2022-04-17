@@ -2,4 +2,8 @@
 
 /Scripts/*
 /Lib/*
-/Lib/site-packages/*
+*.pyc
+doc/.*
+partner/.*
+.settings/
+doc
