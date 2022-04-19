@@ -6,4 +6,7 @@ def index(request):
 
 
 def register(request):
-    return render(request, "face/register.html")
+    return render(request, 'face/register.html')
+
+def profile(request):
+    return render(request, 'face/profile.html')

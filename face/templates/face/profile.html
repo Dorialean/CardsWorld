@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+{% block linking %}
+    <link rel="stylesheet" href="{% static 'face/static/css/profileStyle.css' %}">
+{% endblock %}
+{% block inside %}
+    <div id="profileBlock">
+        <img class="prof_img" src="{% static 'images/profile.png' %}"/>
+    </div>
+{% endblock %}
