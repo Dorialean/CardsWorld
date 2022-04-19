@@ -1,6 +1,6 @@
 span {
-    position:absolute; /* добавили */
-	bottom:0; /* добавили */
+    position:absolute;
+	bottom:0;
     background-color: #C4C4C4;
     width: 100%;
     text-align: center;
