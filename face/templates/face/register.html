@@ -2,6 +2,7 @@
 {% load static %}
 {% block linking %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/registerStyle.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock %}
 {% block inside %}
     <h1 class="welcomingRegHeader">Register yourself please</h1>
@@ -35,10 +36,18 @@
             <td valign="top" align="top">
                 <h3 class="introduceBlock , introduceText">Upload your photo</h3>
                 <div class="inputFieldBlock" id="fileInput">
-                    <label for="fileInput" class="label">Выберите файлы</label>
-                    <input type="file" class="uploadPhoto" id="fileInput" name="myfile" multiple>
+                    <div class="example-1">
+                        <div class="form-group">
+                            <label class="label">
+                            <i class="material-icons">attach_file</i>
+                            <span class="title">Добавить файл</span>
+                            <input type="file">
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </td>
         </tr>
     </table>
+    <input type="submit" id="submitButton">
 {% endblock %}

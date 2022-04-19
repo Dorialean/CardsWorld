@@ -24,6 +24,7 @@ hr{
     background-color: #E1AB61;
     filter: blur(0.2px);
 }
+
 .nav_el{
     margin: 0;
     max-width: 10%;
@@ -72,7 +73,7 @@ hr{
     border-radius: 20px;
 }
 .left_butt:hover{
-    background-color: #eaa156;
+    background-color: #eeaa15;
     color: #000000;
 }
 .left_butt:active{

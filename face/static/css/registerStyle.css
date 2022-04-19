@@ -61,29 +61,30 @@ td{
     border-radius: 30px;
 }
 
-.uploadPhoto {
-    align-content: center;
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-.label {
-    width: 180px;
-    height: 50px;
-    border-radius: 4px;
-    text-align: center;
-    cursor: pointer;
-    display: block;
-    font: 14px/50px Tahoma;
-    transition: all 0.18s ease-in-out;
-    border: 1px solid #333;
-    color: #333;
+#submitButton{
+    color: rgba(251, 225, 174, 1);
+    margin-top: 2%;
+    margin-right: 4%;
+    float: right;
+    min-height: 200px;
+    min-width: 30%  ;
+    border-radius: 30px;
+    font-size: 150px;
+    font-family: 'Poly';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), rgba(65, 26, 6, 0.51);
+    mix-blend-mode: normal;
+    filter: blur(0.5px);
+    border-radius: 20px;
 }
 
-.label:hover {
-    color: white;
-    background: #333;
-}
+.example-1 .form-group{padding:1em;margin:1em}
+.example-1 input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
+.example-1 .label{width:80%;height:200px;border:2px dashed grey;border-radius:5px;display:block;padding:1.2em;transition:border 300ms ease;cursor:pointer;text-align:center}
+.example-1 .label i{display:block;font-size:170px;padding-bottom:16px}
+.example-1 .label i,.example-1 .label .title{color:grey;transition:200ms color}
+.example-1 .label:hover{border:2px solid #000}
+.example-1 .label:hover i,.example-1 .label:hover .title{color:#000}
+
