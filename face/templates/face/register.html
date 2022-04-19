@@ -1,2 +1,44 @@
 {% extends "base.html" %}
 {% load static %}
+{% block linking %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/registerStyle.css' %}">
+{% endblock %}
+{% block inside %}
+    <h1 class="welcomingRegHeader">Register yourself please</h1>
+    <table border="2px" width="100%">
+        <tr>
+            <td height="500px" valign="top" align="top">
+                <h3 class="introduceBlock , introduceText">Your email</h3>
+                <p class="introduceText , phoneCorrection">or phone*</p>
+                <div class="inputFieldBlock">
+                    <input class="inputField" type="text">
+                    <br/>
+                    <input class="inputField" type="text">
+                </div>
+            </td>
+            <td valign="top" align="top">
+                <h3 class="introduceBlock , introduceText">User name</h3>
+                <div class="inputFieldBlock">
+                    <input class="inputField" type="text">
+                    <br/>
+                    <input class="inputField"type="text">
+                </div>
+            </td>
+            <td valign="top" align="top">
+                <h3 class="introduceBlock , introduceText">Password</h3>
+                <div class="inputFieldBlock">
+                    <input class="inputField" type="text">
+                    <br/>
+                    <input class="inputField" type="text">`
+                </div>
+            </td>
+            <td valign="top" align="top">
+                <h3 class="introduceBlock , introduceText">Upload your photo</h3>
+                <div class="inputFieldBlock" id="fileInput">
+                    <label for="fileInput" class="label">Выберите файлы</label>
+                    <input type="file" class="uploadPhoto" id="fileInput" name="myfile" multiple>
+                </div>
+            </td>
+        </tr>
+    </table>
+{% endblock %}
