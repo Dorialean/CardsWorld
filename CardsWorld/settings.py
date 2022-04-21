@@ -84,6 +84,7 @@ WSGI_APPLICATION = 'CardsWorld.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# TODO: Change whenether use other PC's because it's localhost
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
